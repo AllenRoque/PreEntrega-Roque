@@ -1,0 +1,33 @@
+.producto__title {
+  margin: 0.5em 0 0.5em 0;
+  text-align: center;
+  color: $mainColor;
+  font-size: 2em;
+}
+.producto__container {
+  display: flex;
+  justify-content: space-evenly;
+  .producto {
+    border: 1px solid $mainColor;
+    border-radius: 1em;
+    max-width: 20em;
+    .producto__image {
+      width: 100%;
+      height: 15em;
+      border-radius: 1em 1em 0 0;
+    }
+    .producto__name {
+      display: block;
+      margin: 1em 1em 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: $mainColor;
+    }
+    .producto__price {
+      text-align: right;
+      margin: 0 1em 0 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+}

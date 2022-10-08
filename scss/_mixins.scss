@@ -1,0 +1,22 @@
+@mixin media($breakpoint) {
+  @if $breakpoint == comp {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lap {
+    @media (max-width: 850px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 575px) {
+      @content;
+    }
+  }
+  @if $breakpoint == mobile {
+    @media (max-width: 412px) {
+      @content;
+    }
+  }
+}

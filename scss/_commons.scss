@@ -1,0 +1,88 @@
+//header
+.nav-color {
+  background-color: $navColor;
+  .container-fluid {
+    a {
+      .logo {
+        height: 80px;
+      }
+      .logo:hover {
+        transform: scale(1.2);
+        transition: 1s;
+      }
+    }
+    .nav-link {
+      color: $mainColor;
+    }
+  }
+}
+
+//footer
+.footer {
+  display: flex;
+  min-height: 15em;
+  background-color: $keyColor;
+  justify-content: space-around;
+  .box {
+    padding: 2em 0 2em 0;
+    .footer__list {
+      list-style: none;
+      .footer__list--item {
+        margin-bottom: 1.5em;
+        text-align: center;
+        .footer__list--link {
+          text-decoration: none;
+          font-size: 1rem;
+          color: $mainColor;
+          font-weight: bold;
+          .footer__libro {
+            width: 18em;
+            margin: 1em 0 0 0;
+            &:hover {
+              transform: translate(0px, 10px) scale(0.8);
+              transition: 2s;
+            }
+          }
+          &:hover {
+            color: $navColor;
+            transition: 1s;
+          }
+        }
+      }
+    }
+    .title__footer {
+      color: $mainColor;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    .list {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      .list__icon {
+        background-color: $colorIcon;
+        width: 3.125em;
+        height: 3.125em;
+        margin: 3em 1.5em 0 0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+          color: $navColor;
+          font-size: 1.2rem;
+          &:hover {
+            color: $colorIcon;
+            transition: 1s;
+          }
+        }
+        &:hover {
+          background-color: aliceblue;
+          transform: rotate(360deg);
+          transition: 2s;
+        }
+      }
+    }
+  }
+}

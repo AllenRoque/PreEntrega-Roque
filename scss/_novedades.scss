@@ -1,0 +1,30 @@
+.novedades {
+  padding: 1em;
+  margin: 1.5em 10em 1.5em 10em;
+  .producto__title {
+    text-align: center;
+  }
+  .novedades__container {
+    display: flex;
+    flex-direction: column;
+    .novedades__box {
+      display: flex;
+      padding: 1em 2em 1em 2em;
+      margin: 1.5em 0 1.5em 0;
+      flex-direction: row;
+      border: 0.2em solid #7d2a0c;
+      align-items: center;
+      .novedades__content {
+        padding: 0 2em 0 0;
+        .novedades__notice {
+          line-height: 1.2;
+        }
+      }
+      div {
+        .novedades__image {
+          width: 15em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .contacto__box {
+    width: 50%;
+    padding: 3em;
+    .contacto__title {
+      color: #7d2a0c;
+      margin-left: 1.8em;
+    }
+    .formulario {
+      width: 100%;
+      padding: 1.9em;
+      .formulario__input {
+        width: 100%;
+        margin: 0.5em;
+        padding: 0.8em;
+        border: 1px solid #7d2a0c;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1rem;
+      }
+
+      .button {
+        padding: 1em 2em 1em 2em;
+        background-color: #7d2a0c;
+        color: #ca9b4d;
+        font-size: 1em;
+        font-weight: bold;
+      }
+    }
+    .contacto__mapa {
+      width: 100%;
+      height: 70vh;
+      .mapa {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

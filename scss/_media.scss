@@ -1,0 +1,7 @@
+.index__body {
+  @include media(comp) {
+    .nav-link {
+      text-align: center;
+    }
+  }
+}

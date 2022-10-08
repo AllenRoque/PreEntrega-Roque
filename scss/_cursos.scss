@@ -1,0 +1,71 @@
+.cursos__container {
+  display: flex;
+  justify-content: stretch;
+  .cursos__left {
+    width: 20%;
+    padding: 1.5em;
+    background-color: #8d4429;
+    .cursos__list {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      hr {
+        border-top: 5px solid #ca9b4d;
+      }
+      .cursos__item {
+        text-decoration: none;
+        line-height: 3em;
+        color: #ca9b4d;
+        font-weight: bold;
+        font-size: 1rem;
+        &:hover {
+          color: #eaddb3;
+        }
+      }
+    }
+  }
+  .cursos__right {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .cursos_division {
+      width: 100%;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      .cursos__principal {
+        text-align: center;
+        color: #7c2806;
+      }
+    }
+    .cursos__box {
+      margin: 1em;
+      border: 0.06em solid #7d2a0c;
+      padding: 0 0 0.5em 0;
+      border-radius: 0.5em;
+      .cursos__image {
+        width: 100%;
+        border-radius: 0.5em 0.5em 0 0;
+      }
+      .cursos__title {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+      form {
+        .cursos__button {
+          display: block;
+          margin: auto;
+          width: 80%;
+          border: 1px solid #eaddb3;
+          background-color: #eaddb3;
+          &:hover {
+            background-color: #7c2806;
+            color: aliceblue;
+            transition: 2s;
+          }
+        }
+      }
+    }
+  }
+}
